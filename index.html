@@ -24,12 +24,17 @@
             border-radius: 5px;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 8px; /* Aumenta la separación entre los elementos */
             width: fit-content;
         }
 
         .eye-icon {
             font-size: 16px;
+            margin-right: -5px; /* Mueve el ojo más a la izquierda */
+        }
+
+        #live-viewers-count {
+            margin-left: -3px; /* Ajusta el número más a la izquierda */
         }
     </style>
 </head>
@@ -50,7 +55,7 @@
             document.getElementById("live-viewers-count").textContent = getRandomViewers();
         }
 
-        setInterval(updateViewersCount, 5000); // Actualiza cada 5 segundos
+        setInterval(updateViewersCount, 60000); // Actualiza cada 60 segundos
     </script>
 
 </body>
